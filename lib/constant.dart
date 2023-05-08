@@ -1,0 +1,1 @@
+const String CHANNEL_NAME = "Scanner";
