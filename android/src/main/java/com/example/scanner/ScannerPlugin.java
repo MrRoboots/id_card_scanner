@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 
+
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
@@ -49,8 +50,8 @@ public class ScannerPlugin implements FlutterPlugin, MethodCallHandler, Activity
 
     @Override
     public void onDetachedFromEngine(FlutterPluginBinding binding) {
-        channel.setMethodCallHandler(null);
-        flutterEventPlugin.onDetachedFromEngine();
+//        channel.setMethodCallHandler(null);
+//        flutterEventPlugin.onDetachedFromEngine();
     }
 
     @Override

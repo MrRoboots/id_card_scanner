@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -11,9 +12,10 @@ import android.widget.RelativeLayout;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.shouzhong.scanner.Callback;
-import com.shouzhong.scanner.Result;
-import com.shouzhong.scanner.ScannerView;
+
+import com.example.scanner.lib.Callback;
+import com.example.scanner.lib.Result;
+import com.example.scanner.lib.ScannerView;
 
 import java.util.HashMap;
 
@@ -50,6 +52,7 @@ public class ScannerActivity extends FragmentActivity {
 //        scannerView.setViewFinder(new ViewFinder(this));
         scannerView.setSaveBmp(false);
         scannerView.setEnableIdCard(true);
+//        scannerView.setEnableIdCard2(true);
         scannerView.setRotateDegree90Recognition(true);
         scannerView.setCallback(new Callback() {
             @Override
@@ -85,20 +88,23 @@ public class ScannerActivity extends FragmentActivity {
 
     @Override
     protected void onResume() {
+        Log.e("ScannerActivity", "onResume");
         scannerView.onResume();
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        scannerView.onPause();
+        Log.e("ScannerActivity", "onPause");
         super.onPause();
+        scannerView.onPause();
     }
 
     @Override
     protected void onDestroy() {
-        stop();
+        Log.e("ScannerActivity", "onDestroy");
         super.onDestroy();
+        stop();
     }
 
     private void stop() {
@@ -106,8 +112,8 @@ public class ScannerActivity extends FragmentActivity {
             vibrator.cancel();
             vibrator = null;
         }
-        if (scannerView != null) {
-            scannerView.onPause();
+        if (relativeLayout != null) {
+            relativeLayout = null;
         }
     }
 

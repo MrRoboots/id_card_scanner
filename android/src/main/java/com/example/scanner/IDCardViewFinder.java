@@ -8,7 +8,8 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-import com.shouzhong.scanner.IViewFinder;
+import com.example.scanner.lib.IViewFinder;
+
 
 class IDCardViewFinder extends View implements IViewFinder {
     private Rect framingRect;//扫码框所占区域

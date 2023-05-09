@@ -60,7 +60,7 @@ class ScannerExample extends StatefulWidget {
 }
 
 class _ScannerExampleState extends State<ScannerExample> {
-  IDCardController controller;
+  // IDCardController controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
 
   @override
@@ -71,16 +71,16 @@ class _ScannerExampleState extends State<ScannerExample> {
   @override
   void dispose() {
     super.dispose();
-    if (controller != null) {
+  /*  if (controller != null) {
       controller.closeCream();
-    }
+    }*/
   }
 
   void idCardController(IDCardController controller) {
-    controller.openCream();
-    setState(() {
-      this.controller = controller;
-    });
+    // controller.openCream();
+    // setState(() {
+    //   this.controller = controller;
+    // });
   }
 
   @override

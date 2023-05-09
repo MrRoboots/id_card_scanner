@@ -9,9 +9,9 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 
-import com.shouzhong.scanner.Callback;
-import com.shouzhong.scanner.Result;
-import com.shouzhong.scanner.ScannerView;
+import com.example.scanner.lib.Callback;
+import com.example.scanner.lib.Result;
+import com.example.scanner.lib.ScannerView;
 
 import java.util.HashMap;
 

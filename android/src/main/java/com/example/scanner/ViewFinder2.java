@@ -2,7 +2,8 @@ package com.example.scanner;
 
 import android.graphics.Rect;
 
-import com.shouzhong.scanner.IViewFinder;
+import com.example.scanner.lib.IViewFinder;
+
 
 class ViewFinder2 implements IViewFinder {
     @Override

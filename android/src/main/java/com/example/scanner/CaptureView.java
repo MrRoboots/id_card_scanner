@@ -14,7 +14,6 @@ import android.util.Log;
 import android.view.View;
 
 
-
 /**
  * description: 扫描框
  */
@@ -165,11 +164,11 @@ public final class CaptureView extends View {
     }
 
     @Override
-    public void setBackgroundTintList( ColorStateList tint) {
+    public void setBackgroundTintList(ColorStateList tint) {
     }
 
     @Override
-    public void setBackgroundTintMode( PorterDuff.Mode tintMode) {
+    public void setBackgroundTintMode(PorterDuff.Mode tintMode) {
     }
 
 
