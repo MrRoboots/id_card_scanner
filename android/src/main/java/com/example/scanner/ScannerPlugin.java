@@ -50,8 +50,8 @@ public class ScannerPlugin implements FlutterPlugin, MethodCallHandler, Activity
 
     @Override
     public void onDetachedFromEngine(FlutterPluginBinding binding) {
-//        channel.setMethodCallHandler(null);
-//        flutterEventPlugin.onDetachedFromEngine();
+        channel.setMethodCallHandler(null);
+        flutterEventPlugin.onDetachedFromEngine();
     }
 
     @Override
